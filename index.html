@@ -13,17 +13,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    <div class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                         Abuzar Sheikh
                     </div>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
+                    <div class="ml-10 flex items-baseline space-x-4 lg:space-x-8">
                         <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all duration-300">Home</a>
                         <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all duration-300">About</a>
                         <a href="#services" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all duration-300">Services</a>
                         <a href="#portfolio" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium transition-all duration-300">Portfolio</a>
-                        <a href="#contact" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300 pulse-button">Contact</a>
+                        <a href="#contact" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 lg:px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300 pulse-button">Contact</a>
                     </div>
                 </div>
                 <div class="md:hidden">
@@ -51,47 +51,47 @@
     <!-- Hero Section -->
     <section id="home" class="gradient-bg pt-20 pb-16 min-h-screen flex items-center relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
-            <div class="floating absolute top-20 left-10 w-20 h-20 bg-white rounded-full"></div>
-            <div class="floating absolute top-40 right-20 w-16 h-16 bg-yellow-300 rounded-full" style="animation-delay: -2s;"></div>
-            <div class="floating absolute bottom-40 left-20 w-12 h-12 bg-pink-300 rounded-full" style="animation-delay: -4s;"></div>
-            <div class="floating absolute bottom-20 right-10 w-24 h-24 bg-blue-300 rounded-full" style="animation-delay: -1s;"></div>
+            <div class="floating absolute top-20 left-10 w-12 sm:w-20 h-12 sm:h-20 bg-white rounded-full"></div>
+            <div class="floating absolute top-40 right-20 w-10 sm:w-16 h-10 sm:h-16 bg-yellow-300 rounded-full" style="animation-delay: -2s;"></div>
+            <div class="floating absolute bottom-40 left-20 w-8 sm:w-12 h-8 sm:h-12 bg-pink-300 rounded-full" style="animation-delay: -4s;"></div>
+            <div class="floating absolute bottom-20 right-10 w-16 sm:w-24 h-16 sm:h-24 bg-blue-300 rounded-full" style="animation-delay: -1s;"></div>
         </div>
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white slide-in-left">
-                    <div class="text-lg font-medium mb-4 text-yellow-300">👋 Hello, I'm</div>
-                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="text-white slide-in-left text-center lg:text-left">
+                    <div class="text-base sm:text-lg font-medium mb-3 sm:mb-4 text-yellow-300">👋 Hello, I'm</div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">
                         Engineer<br>
                         <span class="bg-gradient-to-r from-yellow-300 to-pink-300 bg-clip-text text-transparent">
                             Abuzar Sheikh
                         </span>
                     </h1>
-                    <div class="text-xl md:text-2xl mb-8 h-16">
-                        <span class="typing-animation">Full-Stack Developer & Digital Marketing Expert</span>
+                    <div class="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 min-h-[60px] sm:min-h-[64px]">
+                        <span class="typing-animation inline-block">Full-Stack Developer & Digital Marketing Expert</span>
                     </div>
-                    <p class="text-lg mb-8 opacity-90 max-w-lg">
+                    <p class="text-base sm:text-lg mb-6 sm:mb-8 opacity-90 max-w-lg mx-auto lg:mx-0">
                         Transforming ideas into powerful digital solutions with WordPress, Shopify, custom coding, and strategic digital marketing.
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button onclick="scrollToSection('portfolio')" class="bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start">
+                        <button onclick="scrollToSection('portfolio')" class="bg-white text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                             View My Work
                         </button>
-                        <button id="download-cv" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105 glow-effect">
+                        <button id="download-cv" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105 glow-effect">
                             Download CV
                         </button>
                     </div>
                 </div>
                 
-                <div class="slide-in-right">
+                <div class="slide-in-right mt-8 lg:mt-0">
                     <div class="relative">
-                        <div class="w-80 h-80 mx-auto bg-gradient-to-br from-white/20 to-white/5 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
-                            <div class="text-8xl">👨‍💻</div>
+                        <div class="w-64 h-64 sm:w-80 sm:h-80 mx-auto bg-gradient-to-br from-white/20 to-white/5 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+                            <div class="text-6xl sm:text-8xl">👨‍💻</div>
                         </div>
-                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center text-2xl floating">
+                        <div class="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-16 sm:w-24 h-16 sm:h-24 bg-yellow-400 rounded-full flex items-center justify-center text-xl sm:text-2xl floating">
                             ⚡
                         </div>
-                        <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-pink-400 rounded-full flex items-center justify-center text-xl floating" style="animation-delay: -2s;">
+                        <div class="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 w-14 sm:w-20 h-14 sm:h-20 bg-pink-400 rounded-full flex items-center justify-center text-lg sm:text-xl floating" style="animation-delay: -2s;">
                             🚀
                         </div>
                     </div>
@@ -101,113 +101,113 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white relative">
+    <section id="about" class="py-12 sm:py-16 lg:py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">About Me</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8 slide-in-up"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 sm:mb-8 slide-in-up"></div>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto slide-in-up px-4">
                     Passionate engineer with expertise in web development and digital marketing
                 </p>
             </div>
             
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                 <div class="slide-in-left">
-                    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-3xl">
-                        <h3 class="text-3xl font-bold text-gray-900 mb-6">My Journey</h3>
-                        <p class="text-gray-700 mb-6 leading-relaxed">
+                    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 sm:p-8 rounded-3xl">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">My Journey</h3>
+                        <p class="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                             As an experienced engineer, I specialize in creating powerful digital solutions that drive business growth. My expertise spans across multiple platforms and technologies, ensuring your project gets the perfect solution.
                         </p>
-                        <p class="text-gray-700 mb-8 leading-relaxed">
+                        <p class="text-sm sm:text-base text-gray-700 mb-6 sm:mb-8 leading-relaxed">
                             From custom WordPress themes to complex e-commerce solutions on Shopify and WooCommerce, I bring ideas to life with clean code and strategic thinking.
                         </p>
                         
-                        <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="grid grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-indigo-600 mb-2">50+</div>
-                                <div class="text-gray-600">Projects Completed</div>
+                                <div class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-2">50+</div>
+                                <div class="text-sm sm:text-base text-gray-600">Projects Completed</div>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-indigo-600 mb-2">5+</div>
-                                <div class="text-gray-600">Years Experience</div>
+                                <div class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-2">5+</div>
+                                <div class="text-sm sm:text-base text-gray-600">Years Experience</div>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-indigo-600 mb-2">100%</div>
-                                <div class="text-gray-600">Client Satisfaction</div>
+                                <div class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-2">100%</div>
+                                <div class="text-sm sm:text-base text-gray-600">Client Satisfaction</div>
                             </div>
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-indigo-600 mb-2">24/7</div>
-                                <div class="text-gray-600">Support</div>
+                                <div class="text-2xl sm:text-3xl font-bold text-indigo-600 mb-2">24/7</div>
+                                <div class="text-sm sm:text-base text-gray-600">Support</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="slide-in-right">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-8">Technical Skills</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Technical Skills</h3>
                     <div class="space-y-6">
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span class="font-semibold text-gray-700">WordPress Development</span>
-                                <span class="text-indigo-600 font-semibold">95%</span>
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">WordPress Development</span>
+                                <span class="text-sm sm:text-base text-indigo-600 font-semibold">95%</span>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="skill-bar bg-gradient-to-r from-indigo-600 to-purple-600 h-3 rounded-full" style="--skill-width: 95%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="flex justify-between mb-2">
-                                <span class="font-semibold text-gray-700">Shopify & WooCommerce</span>
-                                <span class="text-indigo-600 font-semibold">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="skill-bar bg-gradient-to-r from-green-500 to-blue-500 h-3 rounded-full" style="--skill-width: 90%"></div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                <div class="skill-bar bg-gradient-to-r from-indigo-600 to-purple-600 h-2 sm:h-3 rounded-full" style="--skill-width: 95%"></div>
                             </div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span class="font-semibold text-gray-700">Custom Web Development</span>
-                                <span class="text-indigo-600 font-semibold">88%</span>
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Shopify & WooCommerce</span>
+                                <span class="text-sm sm:text-base text-indigo-600 font-semibold">90%</span>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="skill-bar bg-gradient-to-r from-yellow-500 to-red-500 h-3 rounded-full" style="--skill-width: 88%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="flex justify-between mb-2">
-                                <span class="font-semibold text-gray-700">SEO & Digital Marketing</span>
-                                <span class="text-indigo-600 font-semibold">92%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="skill-bar bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full" style="--skill-width: 92%"></div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                <div class="skill-bar bg-gradient-to-r from-green-500 to-blue-500 h-2 sm:h-3 rounded-full" style="--skill-width: 90%"></div>
                             </div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="flex justify-between mb-2">
-                                <span class="font-semibold text-gray-700">Weebly & Website Builders</span>
-                                <span class="text-indigo-600 font-semibold">85%</span>
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Custom Web Development</span>
+                                <span class="text-sm sm:text-base text-indigo-600 font-semibold">88%</span>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="skill-bar bg-gradient-to-r from-teal-500 to-cyan-500 h-3 rounded-full" style="--skill-width: 85%"></div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                <div class="skill-bar bg-gradient-to-r from-yellow-500 to-red-500 h-2 sm:h-3 rounded-full" style="--skill-width: 88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">SEO & Digital Marketing</span>
+                                <span class="text-sm sm:text-base text-indigo-600 font-semibold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                <div class="skill-bar bg-gradient-to-r from-purple-500 to-pink-500 h-2 sm:h-3 rounded-full" style="--skill-width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Weebly & Website Builders</span>
+                                <span class="text-sm sm:text-base text-indigo-600 font-semibold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                <div class="skill-bar bg-gradient-to-r from-teal-500 to-cyan-500 h-2 sm:h-3 rounded-full" style="--skill-width: 85%"></div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="mt-8">
-                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Technologies I Work With</h4>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="tech-icon px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">WordPress</span>
-                            <span class="tech-icon px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">Shopify</span>
-                            <span class="tech-icon px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">WooCommerce</span>
-                            <span class="tech-icon px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">JavaScript</span>
-                            <span class="tech-icon px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">PHP</span>
-                            <span class="tech-icon px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">React</span>
-                            <span class="tech-icon px-4 py-2 bg-pink-100 text-pink-800 rounded-full text-sm font-medium">HTML/CSS</span>
-                            <span class="tech-icon px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">SEO</span>
+                    <div class="mt-6 sm:mt-8">
+                        <h4 class="text-base sm:text-lg font-semibold text-gray-900 mb-4">Technologies I Work With</h4>
+                        <div class="flex flex-wrap gap-2 sm:gap-3">
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium">WordPress</span>
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm font-medium">Shopify</span>
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm font-medium">WooCommerce</span>
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow-100 text-yellow-800 rounded-full text-xs sm:text-sm font-medium">JavaScript</span>
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-red-100 text-red-800 rounded-full text-xs sm:text-sm font-medium">PHP</span>
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-indigo-100 text-indigo-800 rounded-full text-xs sm:text-sm font-medium">React</span>
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-pink-100 text-pink-800 rounded-full text-xs sm:text-sm font-medium">HTML/CSS</span>
+                            <span class="tech-icon px-3 sm:px-4 py-1.5 sm:py-2 bg-teal-100 text-teal-800 rounded-full text-xs sm:text-sm font-medium">SEO</span>
                         </div>
                     </div>
                 </div>
@@ -216,267 +216,267 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50 relative overflow-hidden">
+    <section id="services" class="py-12 sm:py-16 lg:py-20 bg-gray-50 relative overflow-hidden">
         <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-20 left-10 w-32 h-32 bg-indigo-600 rounded-full floating"></div>
-            <div class="absolute bottom-20 right-10 w-24 h-24 bg-purple-600 rounded-full floating" style="animation-delay: -3s;"></div>
+            <div class="absolute top-20 left-10 w-20 sm:w-32 h-20 sm:h-32 bg-indigo-600 rounded-full floating"></div>
+            <div class="absolute bottom-20 right-10 w-16 sm:w-24 h-16 sm:h-24 bg-purple-600 rounded-full floating" style="animation-delay: -3s;"></div>
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">My Services</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8 slide-in-up"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">My Services</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 sm:mb-8 slide-in-up"></div>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto slide-in-up px-4">
                     Comprehensive digital solutions tailored to your business needs
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-card bg-white p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
-                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="service-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
+                    <div class="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 text-2xl sm:text-3xl">
                         🌐
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">WordPress Development</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Custom WordPress websites, themes, and plugins tailored to your specific requirements with modern design and functionality.</p>
-                    <ul class="text-sm text-gray-500 space-y-3 mb-6">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>Custom Theme Development</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>Plugin Integration</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>Performance Optimization</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>Security Implementation</li>
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">WordPress Development</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">Custom WordPress websites, themes, and plugins tailored to your specific requirements with modern design and functionality.</p>
+                    <ul class="text-xs sm:text-sm text-gray-500 space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></span>Custom Theme Development</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></span>Plugin Integration</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></span>Performance Optimization</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></span>Security Implementation</li>
                     </ul>
-                    <div class="text-2xl font-bold text-blue-600">Starting at $500</div>
+                    <div class="text-xl sm:text-2xl font-bold text-blue-600">Starting at $500</div>
                 </div>
                 
-                <div class="service-card bg-white p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
-                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                <div class="service-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
+                    <div class="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 text-2xl sm:text-3xl">
                         🛒
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">E-commerce Solutions</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Complete e-commerce stores using Shopify, WooCommerce with payment integration and inventory management.</p>
-                    <ul class="text-sm text-gray-500 space-y-3 mb-6">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>Shopify Store Setup</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>WooCommerce Development</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>Payment Gateway Integration</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>Inventory Management</li>
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">E-commerce Solutions</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">Complete e-commerce stores using Shopify, WooCommerce with payment integration and inventory management.</p>
+                    <ul class="text-xs sm:text-sm text-gray-500 space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3 flex-shrink-0"></span>Shopify Store Setup</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3 flex-shrink-0"></span>WooCommerce Development</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3 flex-shrink-0"></span>Payment Gateway Integration</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3 flex-shrink-0"></span>Inventory Management</li>
                     </ul>
-                    <div class="text-2xl font-bold text-green-600">Starting at $800</div>
+                    <div class="text-xl sm:text-2xl font-bold text-green-600">Starting at $800</div>
                 </div>
                 
-                <div class="service-card bg-white p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
-                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                <div class="service-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
+                    <div class="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 text-2xl sm:text-3xl">
                         💻
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Custom Web Development</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Bespoke web applications and websites built from scratch using modern technologies and best practices.</p>
-                    <ul class="text-sm text-gray-500 space-y-3 mb-6">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Frontend Development</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Backend Development</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>Database Design</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>API Integration</li>
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Custom Web Development</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">Bespoke web applications and websites built from scratch using modern technologies and best practices.</p>
+                    <ul class="text-xs sm:text-sm text-gray-500 space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3 flex-shrink-0"></span>Frontend Development</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3 flex-shrink-0"></span>Backend Development</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3 flex-shrink-0"></span>Database Design</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-3 flex-shrink-0"></span>API Integration</li>
                     </ul>
-                    <div class="text-2xl font-bold text-purple-600">Starting at $1200</div>
+                    <div class="text-xl sm:text-2xl font-bold text-purple-600">Starting at $1200</div>
                 </div>
                 
-                <div class="service-card bg-white p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                <div class="service-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
+                    <div class="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 text-2xl sm:text-3xl">
                         🎨
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Weebly & Website Builders</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Professional websites using Weebly and other website builders with custom design and functionality.</p>
-                    <ul class="text-sm text-gray-500 space-y-3 mb-6">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>Weebly Customization</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>Template Modification</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>Content Management</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>Mobile Optimization</li>
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Weebly & Website Builders</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">Professional websites using Weebly and other website builders with custom design and functionality.</p>
+                    <ul class="text-xs sm:text-sm text-gray-500 space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3 flex-shrink-0"></span>Weebly Customization</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3 flex-shrink-0"></span>Template Modification</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3 flex-shrink-0"></span>Content Management</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-500 rounded-full mr-3 flex-shrink-0"></span>Mobile Optimization</li>
                     </ul>
-                    <div class="text-2xl font-bold text-yellow-600">Starting at $300</div>
+                    <div class="text-xl sm:text-2xl font-bold text-yellow-600">Starting at $300</div>
                 </div>
                 
-                <div class="service-card bg-white p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
-                    <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                <div class="service-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
+                    <div class="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-red-500 to-pink-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 text-2xl sm:text-3xl">
                         📈
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SEO & Digital Marketing</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Comprehensive SEO strategies and digital marketing campaigns to boost your online presence and drive traffic.</p>
-                    <ul class="text-sm text-gray-500 space-y-3 mb-6">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>On-Page SEO</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>Technical SEO</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>Content Marketing</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>Social Media Marketing</li>
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">SEO & Digital Marketing</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">Comprehensive SEO strategies and digital marketing campaigns to boost your online presence and drive traffic.</p>
+                    <ul class="text-xs sm:text-sm text-gray-500 space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></span>On-Page SEO</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></span>Technical SEO</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></span>Content Marketing</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></span>Social Media Marketing</li>
                     </ul>
-                    <div class="text-2xl font-bold text-red-600">Starting at $400</div>
+                    <div class="text-xl sm:text-2xl font-bold text-red-600">Starting at $400</div>
                 </div>
                 
-                <div class="service-card bg-white p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
-                    <div class="w-20 h-20 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                <div class="service-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border slide-in-up glow-effect">
+                    <div class="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 text-2xl sm:text-3xl">
                         🔧
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Website Maintenance</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Ongoing website maintenance, updates, security monitoring, and technical support to keep your site running smoothly.</p>
-                    <ul class="text-sm text-gray-500 space-y-3 mb-6">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>Regular Updates</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>Security Monitoring</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>Backup Management</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>Performance Optimization</li>
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Website Maintenance</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">Ongoing website maintenance, updates, security monitoring, and technical support to keep your site running smoothly.</p>
+                    <ul class="text-xs sm:text-sm text-gray-500 space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3 flex-shrink-0"></span>Regular Updates</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3 flex-shrink-0"></span>Security Monitoring</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3 flex-shrink-0"></span>Backup Management</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-500 rounded-full mr-3 flex-shrink-0"></span>Performance Optimization</li>
                     </ul>
-                    <div class="text-2xl font-bold text-teal-600">Starting at $150/month</div>
+                    <div class="text-xl sm:text-2xl font-bold text-teal-600">Starting at $150/month</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-white">
+    <section id="portfolio" class="py-12 sm:py-16 lg:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">My Portfolio</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8 slide-in-up"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">My Portfolio</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 sm:mb-8 slide-in-up"></div>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto slide-in-up px-4">
                     Showcasing my latest projects and success stories
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <div class="project-card bg-white rounded-3xl shadow-lg overflow-hidden slide-in-up" onclick="openModal('modal1')">
-                    <div class="h-64 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center relative">
+                    <div class="h-48 sm:h-64 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center relative">
                         <div class="text-white text-center">
-                            <div class="text-6xl mb-4">🏪</div>
-                            <div class="text-xl font-semibold">TechMart E-commerce</div>
+                            <div class="text-4xl sm:text-6xl mb-2 sm:mb-4">🏪</div>
+                            <div class="text-lg sm:text-xl font-semibold px-4">TechMart E-commerce</div>
                         </div>
                         <div class="project-overlay">
-                            <div class="text-white text-center">
-                                <div class="text-lg font-semibold mb-2">View Details</div>
-                                <div class="text-sm opacity-90">Click to learn more</div>
+                            <div class="text-white text-center px-4">
+                                <div class="text-base sm:text-lg font-semibold mb-2">View Details</div>
+                                <div class="text-xs sm:text-sm opacity-90">Click to learn more</div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">TechMart E-commerce Store</h3>
-                        <p class="text-gray-600 mb-4">Complete Shopify store with custom theme, payment integration, and inventory management system.</p>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">TechMart E-commerce Store</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Complete Shopify store with custom theme, payment integration, and inventory management system.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Shopify</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Custom Theme</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">SEO</span>
+                            <span class="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded-full">Shopify</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-100 text-blue-800 text-xs sm:text-sm rounded-full">Custom Theme</span>
+                            <span class="px-2 sm:px-3 py-1 bg-purple-100 text-purple-800 text-xs sm:text-sm rounded-full">SEO</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card bg-white rounded-3xl shadow-lg overflow-hidden slide-in-up" onclick="openModal('modal2')">
-                    <div class="h-64 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center relative">
+                    <div class="h-48 sm:h-64 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center relative">
                         <div class="text-white text-center">
-                            <div class="text-6xl mb-4">🏥</div>
-                            <div class="text-xl font-semibold">HealthCare Plus</div>
+                            <div class="text-4xl sm:text-6xl mb-2 sm:mb-4">🏥</div>
+                            <div class="text-lg sm:text-xl font-semibold px-4">HealthCare Plus</div>
                         </div>
                         <div class="project-overlay">
-                            <div class="text-white text-center">
-                                <div class="text-lg font-semibold mb-2">View Details</div>
-                                <div class="text-sm opacity-90">Click to learn more</div>
+                            <div class="text-white text-center px-4">
+                                <div class="text-base sm:text-lg font-semibold mb-2">View Details</div>
+                                <div class="text-xs sm:text-sm opacity-90">Click to learn more</div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">HealthCare Plus Website</h3>
-                        <p class="text-gray-600 mb-4">Professional WordPress website for healthcare services with appointment booking and patient portal.</p>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">HealthCare Plus Website</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Professional WordPress website for healthcare services with appointment booking and patient portal.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">WordPress</span>
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Custom Plugin</span>
-                            <span class="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">Booking System</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-100 text-blue-800 text-xs sm:text-sm rounded-full">WordPress</span>
+                            <span class="px-2 sm:px-3 py-1 bg-yellow-100 text-yellow-800 text-xs sm:text-sm rounded-full">Custom Plugin</span>
+                            <span class="px-2 sm:px-3 py-1 bg-red-100 text-red-800 text-xs sm:text-sm rounded-full">Booking System</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card bg-white rounded-3xl shadow-lg overflow-hidden slide-in-up" onclick="openModal('modal3')">
-                    <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center relative">
+                    <div class="h-48 sm:h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center relative">
                         <div class="text-white text-center">
-                            <div class="text-6xl mb-4">🍕</div>
-                            <div class="text-xl font-semibold">Foodie Delight</div>
+                            <div class="text-4xl sm:text-6xl mb-2 sm:mb-4">🍕</div>
+                            <div class="text-lg sm:text-xl font-semibold px-4">Foodie Delight</div>
                         </div>
                         <div class="project-overlay">
-                            <div class="text-white text-center">
-                                <div class="text-lg font-semibold mb-2">View Details</div>
-                                <div class="text-sm opacity-90">Click to learn more</div>
+                            <div class="text-white text-center px-4">
+                                <div class="text-base sm:text-lg font-semibold mb-2">View Details</div>
+                                <div class="text-xs sm:text-sm opacity-90">Click to learn more</div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Foodie Delight Restaurant</h3>
-                        <p class="text-gray-600 mb-4">Modern restaurant website with online ordering system and table reservation functionality.</p>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">Foodie Delight Restaurant</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Modern restaurant website with online ordering system and table reservation functionality.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">WooCommerce</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Online Ordering</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Reservations</span>
+                            <span class="px-2 sm:px-3 py-1 bg-orange-100 text-orange-800 text-xs sm:text-sm rounded-full">WooCommerce</span>
+                            <span class="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded-full">Online Ordering</span>
+                            <span class="px-2 sm:px-3 py-1 bg-purple-100 text-purple-800 text-xs sm:text-sm rounded-full">Reservations</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card bg-white rounded-3xl shadow-lg overflow-hidden slide-in-up" onclick="openModal('modal4')">
-                    <div class="h-64 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center relative">
+                    <div class="h-48 sm:h-64 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center relative">
                         <div class="text-white text-center">
-                            <div class="text-6xl mb-4">🏠</div>
-                            <div class="text-xl font-semibold">RealEstate Pro</div>
+                            <div class="text-4xl sm:text-6xl mb-2 sm:mb-4">🏠</div>
+                            <div class="text-lg sm:text-xl font-semibold px-4">RealEstate Pro</div>
                         </div>
                         <div class="project-overlay">
-                            <div class="text-white text-center">
-                                <div class="text-lg font-semibold mb-2">View Details</div>
-                                <div class="text-sm opacity-90">Click to learn more</div>
+                            <div class="text-white text-center px-4">
+                                <div class="text-base sm:text-lg font-semibold mb-2">View Details</div>
+                                <div class="text-xs sm:text-sm opacity-90">Click to learn more</div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">RealEstate Pro Platform</h3>
-                        <p class="text-gray-600 mb-4">Comprehensive real estate platform with property listings, search filters, and agent profiles.</p>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">RealEstate Pro Platform</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Comprehensive real estate platform with property listings, search filters, and agent profiles.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Custom Development</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Property Search</span>
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Agent Portal</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-100 text-blue-800 text-xs sm:text-sm rounded-full">Custom Development</span>
+                            <span class="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded-full">Property Search</span>
+                            <span class="px-2 sm:px-3 py-1 bg-yellow-100 text-yellow-800 text-xs sm:text-sm rounded-full">Agent Portal</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card bg-white rounded-3xl shadow-lg overflow-hidden slide-in-up" onclick="openModal('modal5')">
-                    <div class="h-64 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center relative">
+                    <div class="h-48 sm:h-64 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center relative">
                         <div class="text-white text-center">
-                            <div class="text-6xl mb-4">💄</div>
-                            <div class="text-xl font-semibold">Beauty Salon</div>
+                            <div class="text-4xl sm:text-6xl mb-2 sm:mb-4">💄</div>
+                            <div class="text-lg sm:text-xl font-semibold px-4">Beauty Salon</div>
                         </div>
                         <div class="project-overlay">
-                            <div class="text-white text-center">
-                                <div class="text-lg font-semibold mb-2">View Details</div>
-                                <div class="text-sm opacity-90">Click to learn more</div>
+                            <div class="text-white text-center px-4">
+                                <div class="text-base sm:text-lg font-semibold mb-2">View Details</div>
+                                <div class="text-xs sm:text-sm opacity-90">Click to learn more</div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Beauty Salon Website</h3>
-                        <p class="text-gray-600 mb-4">Elegant beauty salon website with service booking, gallery, and customer testimonials.</p>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">Beauty Salon Website</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Elegant beauty salon website with service booking, gallery, and customer testimonials.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-pink-100 text-pink-800 text-sm rounded-full">Weebly</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Booking System</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Gallery</span>
+                            <span class="px-2 sm:px-3 py-1 bg-pink-100 text-pink-800 text-xs sm:text-sm rounded-full">Weebly</span>
+                            <span class="px-2 sm:px-3 py-1 bg-purple-100 text-purple-800 text-xs sm:text-sm rounded-full">Booking System</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-100 text-blue-800 text-xs sm:text-sm rounded-full">Gallery</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card bg-white rounded-3xl shadow-lg overflow-hidden slide-in-up" onclick="openModal('modal6')">
-                    <div class="h-64 bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center relative">
+                    <div class="h-48 sm:h-64 bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center relative">
                         <div class="text-white text-center">
-                            <div class="text-6xl mb-4">📚</div>
-                            <div class="text-xl font-semibold">EduLearn Platform</div>
+                            <div class="text-4xl sm:text-6xl mb-2 sm:mb-4">📚</div>
+                            <div class="text-lg sm:text-xl font-semibold px-4">EduLearn Platform</div>
                         </div>
                         <div class="project-overlay">
-                            <div class="text-white text-center">
-                                <div class="text-lg font-semibold mb-2">View Details</div>
-                                <div class="text-sm opacity-90">Click to learn more</div>
+                            <div class="text-white text-center px-4">
+                                <div class="text-base sm:text-lg font-semibold mb-2">View Details</div>
+                                <div class="text-xs sm:text-sm opacity-90">Click to learn more</div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">EduLearn Online Platform</h3>
-                        <p class="text-gray-600 mb-4">Complete e-learning platform with course management, student portal, and progress tracking.</p>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">EduLearn Online Platform</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Complete e-learning platform with course management, student portal, and progress tracking.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">WordPress</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">LMS</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-sm rounded-full">Progress Tracking</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-100 text-blue-800 text-xs sm:text-sm rounded-full">WordPress</span>
+                            <span class="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded-full">LMS</span>
+                            <span class="px-2 sm:px-3 py-1 bg-teal-100 text-teal-800 text-xs sm:text-sm rounded-full">Progress Tracking</span>
                         </div>
                     </div>
                 </div>
@@ -484,166 +484,166 @@
         </div>
     </section>
 
-               <section id="contact" class="py-20 bg-gradient-to-br from-indigo-50 to-purple-50 relative overflow-hidden">
-            <div class="absolute inset-0 opacity-10">
-                <div class="floating absolute top-20 left-10 w-32 h-32 bg-indigo-600 rounded-full"></div>
-                <div class="floating absolute bottom-20 right-10 w-24 h-24 bg-purple-600 rounded-full" style="animation-delay: -2s;"></div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-indigo-50 to-purple-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="floating absolute top-20 left-10 w-20 sm:w-32 h-20 sm:h-32 bg-indigo-600 rounded-full"></div>
+            <div class="floating absolute bottom-20 right-10 w-16 sm:w-24 h-16 sm:h-24 bg-purple-600 rounded-full" style="animation-delay: -2s;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">Let's Work Together</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 sm:mb-8 slide-in-up"></div>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto slide-in-up px-4">
+                    Ready to bring your digital vision to life? Let's discuss your project and create something amazing together.
+                </p>
             </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 slide-in-up">Let's Work Together</h2>
-                    <div class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8 slide-in-up"></div>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up">
-                        Ready to bring your digital vision to life? Let's discuss your project and create something amazing together.
-                    </p>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-12">
-                    <!-- Contact Form (Left) -->
-                    <div class="slide-in-left">
-                        <div class="bg-white rounded-3xl shadow-xl p-8 glow-effect">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-6">Send me a message</h3>
-                           <form id="contact-form" class="space-y-6" action="https://formsubmit.co/m.abuzarbadarsheikh@gmail.com" method="POST">
-  <input type="hidden" name="_subject" value="New Contact Form Submission">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://engineerabuzarsheikh.site/thank-you.html">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Contact Form (Left) -->
+                <div class="slide-in-left">
+                    <div class="bg-white rounded-3xl shadow-xl p-6 sm:p-8 glow-effect">
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Send me a message</h3>
+                        <form id="contact-form" class="space-y-4 sm:space-y-6" action="https://formsubmit.co/m.abuzarbadarsheikh@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://engineerabuzarsheikh.site/thank-you.html">
 
-  <!-- Your existing form fields below (unchanged) -->
-  <div class="grid md:grid-cols-2 gap-6">
-    <div>
-      <label class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
-      <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300" placeholder="Your name">
-    </div>
-    <div>
-      <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
-      <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300" placeholder="your@email.com">
-    </div>
-  </div>
-  <div>
-    <label class="block text-sm font-semibold text-gray-700 mb-2">Service Needed</label>
-    <select name="service" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300">
-      <option>WordPress Development</option>
-      <option>Shopify Store</option>
-      <option>WooCommerce</option>
-      <option>Custom Development</option>
-      <option>SEO & Marketing</option>
-      <option>Website Maintenance</option>
-    </select>
-  </div>
-  <div>
-    <label class="block text-sm font-semibold text-gray-700 mb-2">Budget Range</label>
-    <select name="budget" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300">
-      <option>$500 - $1,000</option>
-      <option>$1,000 - $2,500</option>
-      <option>$2,500 - $5,000</option>
-      <option>$5,000+</option>
-    </select>
-  </div>
-  <div>
-    <label class="block text-sm font-semibold text-gray-700 mb-2">Project Details</label>
-    <textarea name="details" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300" placeholder="Tell me about your project requirements..."></textarea>
-  </div>
-  <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-    Send Message 🚀
-  </button>
-</form>
-                        </div>
-                    </div>
-                    <!-- Contact Cards (Right) -->
-                    <div class="slide-in-right">
-                        <div class="space-y-8 w-full max-w-xl mx-auto">
-                            <!-- Email Card -->
-                            <a href="mailto:abuzar.sheikh@email.com"
-                               class="block bg-white rounded-3xl shadow-xl p-6 glow-effect card-email">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mr-4 text-2xl">📧</div>
-                                    <div>
-                                        <h4 class="text-lg font-bold text-gray-900">Email Me</h4>
-                                        <p class="text-gray-600">m.abuzarbadarsheikh@email.com</p>
-                                    </div>
+                            <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                                    <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base" placeholder="Your name">
                                 </div>
-                            </a>
-                            <!-- Call Card -->
-                            <a href="tel:923079106436"
-                               class="block bg-white rounded-3xl shadow-xl p-6 glow-effect card-call">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mr-4 text-2xl">📱</div>
-                                    <div>
-                                        <h4 class="text-lg font-bold text-gray-900">Call Me</h4>
-                                        <p class="text-gray-600">+92 (307) 9106436</p>
-                                    </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                                    <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base" placeholder="your@email.com">
                                 </div>
-                            </a>
-                            <!-- WhatsApp Card -->
-                            <a href="https://wa.me/92079106436" target="_blank" rel="noopener"
-                               class="block bg-white rounded-3xl shadow-xl p-6 glow-effect card-whatsapp">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mr-4 text-2xl">💬</div>
-                                    <div>
-                                        <h4 class="text-lg font-bold text-gray-900">WhatsApp</h4>
-                                        <p class="text-gray-600">+92 (307) 9106436</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- Ready to get started card -->
-                            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl shadow-xl p-8 text-white">
-                                <h4 class="text-2xl font-bold mb-4">Ready to get started?</h4>
-                                <p class="mb-6 opacity-90">Let's schedule a free consultation to discuss your project requirements and how I can help bring your vision to life.</p>
-                                <button onclick="alert('Booking system integration would be implemented here!')" class="bg-white text-indigo-600 px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                                    Book Free Consultation 📅
-                                </button>
                             </div>
-                            <!-- Follow Me Card -->
-                            <div class="bg-white rounded-3xl shadow-xl p-6 glow-effect">
-                                <h4 class="text-lg font-bold text-gray-900 mb-4">Follow Me</h4>
-                                <div class="flex space-x-4">
-                                <a href="#" class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-all duration-300 transform hover:scale-110">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Service Needed</label>
+                                <select name="service" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base">
+                                    <option>WordPress Development</option>
+                                    <option>Shopify Store</option>
+                                    <option>WooCommerce</option>
+                                    <option>Custom Development</option>
+                                    <option>SEO & Marketing</option>
+                                    <option>Website Maintenance</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Budget Range</label>
+                                <select name="budget" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base">
+                                    <option>$500 - $1,000</option>
+                                    <option>$1,000 - $2,500</option>
+                                    <option>$2,500 - $5,000</option>
+                                    <option>$5,000+</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Project Details</label>
+                                <textarea name="details" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base" placeholder="Tell me about your project requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 sm:py-4 px-6 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
+                                Send Message 🚀
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Contact Cards (Right) -->
+                <div class="slide-in-right">
+                    <div class="space-y-6 sm:space-y-8 w-full max-w-xl mx-auto">
+                        <!-- Email Card -->
+                        <a href="mailto:m.abuzarbadarsheikh@gmail.com"
+                           class="block bg-white rounded-3xl shadow-xl p-6 glow-effect card-email">
+                            <div class="flex items-center">
+                                <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mr-4 text-xl sm:text-2xl flex-shrink-0">📧</div>
+                                <div class="min-w-0">
+                                    <h4 class="text-base sm:text-lg font-bold text-gray-900">Email Me</h4>
+                                    <p class="text-sm sm:text-base text-gray-600 break-words">m.abuzarbadarsheikh@gmail.com</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Call Card -->
+                        <a href="tel:923079106436"
+                           class="block bg-white rounded-3xl shadow-xl p-6 glow-effect card-call">
+                            <div class="flex items-center">
+                                <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mr-4 text-xl sm:text-2xl flex-shrink-0">📱</div>
+                                <div>
+                                    <h4 class="text-base sm:text-lg font-bold text-gray-900">Call Me</h4>
+                                    <p class="text-sm sm:text-base text-gray-600">+92 (307) 9106436</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- WhatsApp Card -->
+                        <a href="https://wa.me/923079106436" target="_blank" rel="noopener"
+                           class="block bg-white rounded-3xl shadow-xl p-6 glow-effect card-whatsapp">
+                            <div class="flex items-center">
+                                <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mr-4 text-xl sm:text-2xl flex-shrink-0">💬</div>
+                                <div>
+                                    <h4 class="text-base sm:text-lg font-bold text-gray-900">WhatsApp</h4>
+                                    <p class="text-sm sm:text-base text-gray-600">+92 (307) 9106436</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Ready to get started card -->
+                        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl shadow-xl p-6 sm:p-8 text-white">
+                            <h4 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Ready to get started?</h4>
+                            <p class="text-sm sm:text-base mb-4 sm:mb-6 opacity-90">Let's schedule a free consultation to discuss your project requirements and how I can help bring your vision to life.</p>
+                            <button onclick="alert('Booking system integration would be implemented here!')" class="bg-white text-indigo-600 px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-sm sm:text-base w-full sm:w-auto">
+                                Book Free Consultation 📅
+                            </button>
+                        </div>
+                        <!-- Follow Me Card -->
+                        <div class="bg-white rounded-3xl shadow-xl p-6 glow-effect">
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900 mb-4">Follow Me</h4>
+                            <div class="flex flex-wrap gap-3 sm:gap-4">
+                                <a href="#" class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-all duration-300 transform hover:scale-110">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
                                     </svg>
                                 </a>
-                                <a href="#" class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-all duration-300 transform hover:scale-110">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <a href="#" class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-all duration-300 transform hover:scale-110">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                                     </svg>
                                 </a>
-                                <a href="#" class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 hover:bg-purple-200 transition-all duration-300 transform hover:scale-110">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                                <a href="#" class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 hover:bg-purple-200 transition-all duration-300 transform hover:scale-110">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
                                     </svg>
                                 </a>
-                                <a href="#" class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-red-600 hover:bg-red-200 transition-all duration-300 transform hover:scale-110">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <a href="#" class="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 rounded-xl flex items-center justify-center text-red-600 hover:bg-red-200 transition-all duration-300 transform hover:scale-110">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                                     </svg>
                                 </a>
                             </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-8 sm:py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 <div>
-                    <div class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-4">
+                    <div class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-4">
                         Abuzar Sheikh
                     </div>
-                    <p class="text-gray-400 mb-4 leading-relaxed">
+                    <p class="text-sm sm:text-base text-gray-400 mb-4 leading-relaxed">
                         Engineer specializing in digital solutions that drive business growth and user engagement.
                     </p>
-                    <div class="text-sm text-gray-500">
+                    <div class="text-xs sm:text-sm text-gray-500">
                         © 2024 Engineer Abuzar Sheikh. All rights reserved.
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
+                    <h4 class="text-base sm:text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
                         <li><a href="#" class="hover:text-white transition-colors">WordPress Development</a></li>
                         <li><a href="#" class="hover:text-white transition-colors">Shopify Stores</a></li>
                         <li><a href="#" class="hover:text-white transition-colors">WooCommerce</a></li>
@@ -653,8 +653,8 @@
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
+                    <h4 class="text-base sm:text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
                         <li><a href="#about" class="hover:text-white transition-colors">About Me</a></li>
                         <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
@@ -664,9 +664,9 @@
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>📧 m.abuzarbadarsheikh@gmail.com</li>
+                    <h4 class="text-base sm:text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li class="break-words">📧 m.abuzarbadarsheikh@gmail.com</li>
                         <li>📱 +92 (307) 910-6436</li>
                         <li>💬 WhatsApp Available</li>
                         <li>🌍 Available Worldwide</li>
@@ -679,22 +679,22 @@
     <!-- Modals -->
     <div id="modal1" class="modal">
         <div class="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-3xl font-bold text-gray-900">TechMart E-commerce Store</h3>
+            <div class="flex justify-between items-center mb-4 sm:mb-6">
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-900">TechMart E-commerce Store</h3>
                 <button onclick="closeModal('modal1')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
             </div>
-            <div class="h-64 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl mb-6 flex items-center justify-center">
+            <div class="h-48 sm:h-64 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl mb-4 sm:mb-6 flex items-center justify-center">
                 <div class="text-white text-center">
-                    <div class="text-8xl mb-4">🏪</div>
-                    <div class="text-2xl font-semibold">TechMart E-commerce</div>
+                    <div class="text-6xl sm:text-8xl mb-2 sm:mb-4">🏪</div>
+                    <div class="text-xl sm:text-2xl font-semibold">TechMart E-commerce</div>
                 </div>
             </div>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Complete Shopify e-commerce store for TechMart, featuring custom theme development, advanced product filtering, secure payment integration, and comprehensive inventory management. The store includes customer accounts, wishlist functionality, and mobile-optimized design.
             </p>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Key Features:</h4>
-                <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Key Features:</h4>
+                <ul class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
                     <li>Custom Shopify theme with modern design</li>
                     <li>Advanced product search and filtering</li>
                     <li>Multiple payment gateway integration</li>
@@ -704,18 +704,18 @@
                     <li>SEO optimization</li>
                 </ul>
             </div>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Technologies Used:</h4>
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Technologies Used:</h4>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full">Shopify</span>
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">Liquid</span>
-                    <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full">JavaScript</span>
-                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full">CSS3</span>
-                    <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full">SEO</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm">Shopify</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm">Liquid</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm">JavaScript</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow-100 text-yellow-800 rounded-full text-xs sm:text-sm">CSS3</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-100 text-red-800 rounded-full text-xs sm:text-sm">SEO</span>
                 </div>
             </div>
             <div class="text-center">
-                <button class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300">
+                <button class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
                     View Live Site 🚀
                 </button>
             </div>
@@ -724,22 +724,22 @@
 
     <div id="modal2" class="modal">
         <div class="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-3xl font-bold text-gray-900">HealthCare Plus Website</h3>
+            <div class="flex justify-between items-center mb-4 sm:mb-6">
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-900">HealthCare Plus Website</h3>
                 <button onclick="closeModal('modal2')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
             </div>
-            <div class="h-64 bg-gradient-to-br from-green-400 to-teal-500 rounded-2xl mb-6 flex items-center justify-center">
+            <div class="h-48 sm:h-64 bg-gradient-to-br from-green-400 to-teal-500 rounded-2xl mb-4 sm:mb-6 flex items-center justify-center">
                 <div class="text-white text-center">
-                    <div class="text-8xl mb-4">🏥</div>
-                    <div class="text-2xl font-semibold">HealthCare Plus</div>
+                    <div class="text-6xl sm:text-8xl mb-2 sm:mb-4">🏥</div>
+                    <div class="text-xl sm:text-2xl font-semibold">HealthCare Plus</div>
                 </div>
             </div>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Professional WordPress website for HealthCare Plus medical center, featuring appointment booking system, patient portal, doctor profiles, and medical service information. The site includes HIPAA-compliant features and secure patient data handling.
             </p>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Key Features:</h4>
-                <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Key Features:</h4>
+                <ul class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
                     <li>Custom WordPress theme for healthcare</li>
                     <li>Online appointment booking system</li>
                     <li>Patient portal with secure login</li>
@@ -749,18 +749,18 @@
                     <li>Mobile-responsive design</li>
                 </ul>
             </div>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Technologies Used:</h4>
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Technologies Used:</h4>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">WordPress</span>
-                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full">Custom Plugin</span>
-                    <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full">Booking System</span>
-                    <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full">PHP</span>
-                    <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full">MySQL</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm">WordPress</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow-100 text-yellow-800 rounded-full text-xs sm:text-sm">Custom Plugin</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-100 text-red-800 rounded-full text-xs sm:text-sm">Booking System</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm">PHP</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm">MySQL</span>
                 </div>
             </div>
             <div class="text-center">
-                <button class="bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300">
+                <button class="bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
                     View Live Site 🚀
                 </button>
             </div>
@@ -769,22 +769,22 @@
 
     <div id="modal3" class="modal">
         <div class="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-3xl font-bold text-gray-900">Foodie Delight Restaurant</h3>
+            <div class="flex justify-between items-center mb-4 sm:mb-6">
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-900">Foodie Delight Restaurant</h3>
                 <button onclick="closeModal('modal3')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
             </div>
-            <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl mb-6 flex items-center justify-center">
+            <div class="h-48 sm:h-64 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl mb-4 sm:mb-6 flex items-center justify-center">
                 <div class="text-white text-center">
-                    <div class="text-8xl mb-4">🍕</div>
-                    <div class="text-2xl font-semibold">Foodie Delight</div>
+                    <div class="text-6xl sm:text-8xl mb-2 sm:mb-4">🍕</div>
+                    <div class="text-xl sm:text-2xl font-semibold">Foodie Delight</div>
                 </div>
             </div>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Modern restaurant website for Foodie Delight with online ordering system, table reservation functionality, menu management, and customer reviews. Built with WooCommerce for seamless food ordering and payment processing.
             </p>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Key Features:</h4>
-                <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Key Features:</h4>
+                <ul class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
                     <li>Online food ordering system</li>
                     <li>Table reservation booking</li>
                     <li>Digital menu with categories</li>
@@ -794,18 +794,18 @@
                     <li>Delivery and pickup options</li>
                 </ul>
             </div>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Technologies Used:</h4>
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Technologies Used:</h4>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-orange-100 text-orange-800 rounded-full">WooCommerce</span>
-                    <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full">Online Ordering</span>
-                    <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full">Reservations</span>
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">WordPress</span>
-                    <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full">Payment Gateway</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-orange-100 text-orange-800 rounded-full text-xs sm:text-sm">WooCommerce</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm">Online Ordering</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm">Reservations</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm">WordPress</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-100 text-red-800 rounded-full text-xs sm:text-sm">Payment Gateway</span>
                 </div>
             </div>
             <div class="text-center">
-                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300">
+                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
                     View Live Site 🚀
                 </button>
             </div>
@@ -814,22 +814,22 @@
 
     <div id="modal4" class="modal">
         <div class="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-3xl font-bold text-gray-900">RealEstate Pro Platform</h3>
+            <div class="flex justify-between items-center mb-4 sm:mb-6">
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-900">RealEstate Pro Platform</h3>
                 <button onclick="closeModal('modal4')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
             </div>
-            <div class="h-64 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl mb-6 flex items-center justify-center">
+            <div class="h-48 sm:h-64 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl mb-4 sm:mb-6 flex items-center justify-center">
                 <div class="text-white text-center">
-                    <div class="text-8xl mb-4">🏠</div>
-                    <div class="text-2xl font-semibold">RealEstate Pro</div>
+                    <div class="text-6xl sm:text-8xl mb-2 sm:mb-4">🏠</div>
+                    <div class="text-xl sm:text-2xl font-semibold">RealEstate Pro</div>
                 </div>
             </div>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Comprehensive real estate platform with advanced property listings, search filters, agent profiles, and property management tools. Built with custom development to handle complex real estate requirements and user interactions.
             </p>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Key Features:</h4>
-                <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Key Features:</h4>
+                <ul class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
                     <li>Advanced property search and filters</li>
                     <li>Agent profiles and contact system</li>
                     <li>Property listing management</li>
@@ -839,18 +839,18 @@
                     <li>User dashboard and favorites</li>
                 </ul>
             </div>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Technologies Used:</h4>
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Technologies Used:</h4>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">Custom Development</span>
-                    <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full">Property Search</span>
-                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full">Agent Portal</span>
-                    <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full">Maps API</span>
-                    <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full">Database</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm">Custom Development</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm">Property Search</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow-100 text-yellow-800 rounded-full text-xs sm:text-sm">Agent Portal</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm">Maps API</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-100 text-red-800 rounded-full text-xs sm:text-sm">Database</span>
                 </div>
             </div>
             <div class="text-center">
-                <button class="bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300">
+                <button class="bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
                     View Live Site 🚀
                 </button>
             </div>
@@ -859,22 +859,22 @@
 
     <div id="modal5" class="modal">
         <div class="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-3xl font-bold text-gray-900">Beauty Salon Website</h3>
+            <div class="flex justify-between items-center mb-4 sm:mb-6">
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-900">Beauty Salon Website</h3>
                 <button onclick="closeModal('modal5')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
             </div>
-            <div class="h-64 bg-gradient-to-br from-red-400 to-pink-500 rounded-2xl mb-6 flex items-center justify-center">
+            <div class="h-48 sm:h-64 bg-gradient-to-br from-red-400 to-pink-500 rounded-2xl mb-4 sm:mb-6 flex items-center justify-center">
                 <div class="text-white text-center">
-                    <div class="text-8xl mb-4">💄</div>
-                    <div class="text-2xl font-semibold">Beauty Salon</div>
+                    <div class="text-6xl sm:text-8xl mb-2 sm:mb-4">💄</div>
+                    <div class="text-xl sm:text-2xl font-semibold">Beauty Salon</div>
                 </div>
             </div>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Elegant beauty salon website built with Weebly, featuring service booking system, photo gallery, customer testimonials, and staff profiles. The design focuses on showcasing beauty services with stunning visuals and easy navigation.
             </p>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Key Features:</h4>
-                <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Key Features:</h4>
+                <ul class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
                     <li>Online appointment booking</li>
                     <li>Service menu with pricing</li>
                     <li>Photo gallery showcase</li>
@@ -884,18 +884,18 @@
                     <li>Social media integration</li>
                 </ul>
             </div>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Technologies Used:</h4>
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Technologies Used:</h4>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-pink-100 text-pink-800 rounded-full">Weebly</span>
-                    <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full">Booking System</span>
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">Gallery</span>
-                    <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full">Custom CSS</span>
-                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full">Responsive</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-pink-100 text-pink-800 rounded-full text-xs sm:text-sm">Weebly</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm">Booking System</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm">Gallery</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm">Custom CSS</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow-100 text-yellow-800 rounded-full text-xs sm:text-sm">Responsive</span>
                 </div>
             </div>
             <div class="text-center">
-                <button class="bg-gradient-to-r from-red-600 to-pink-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300">
+                <button class="bg-gradient-to-r from-red-600 to-pink-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
                     View Live Site 🚀
                 </button>
             </div>
@@ -904,22 +904,22 @@
 
     <div id="modal6" class="modal">
         <div class="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-3xl font-bold text-gray-900">EduLearn Online Platform</h3>
+            <div class="flex justify-between items-center mb-4 sm:mb-6">
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-900">EduLearn Online Platform</h3>
                 <button onclick="closeModal('modal6')" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
             </div>
-            <div class="h-64 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl mb-6 flex items-center justify-center">
+            <div class="h-48 sm:h-64 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl mb-4 sm:mb-6 flex items-center justify-center">
                 <div class="text-white text-center">
-                    <div class="text-8xl mb-4">📚</div>
-                    <div class="text-2xl font-semibold">EduLearn Platform</div>
+                    <div class="text-6xl sm:text-8xl mb-2 sm:mb-4">📚</div>
+                    <div class="text-xl sm:text-2xl font-semibold">EduLearn Platform</div>
                 </div>
             </div>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Complete e-learning platform built with WordPress and custom LMS integration. Features course management, student progress tracking, quiz system, and certificate generation. Designed for educational institutions and online course creators.
             </p>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Key Features:</h4>
-                <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Key Features:</h4>
+                <ul class="list-disc list-inside text-sm sm:text-base text-gray-600 space-y-2">
                     <li>Course creation and management</li>
                     <li>Student enrollment system</li>
                     <li>Progress tracking and analytics</li>
@@ -929,27 +929,24 @@
                     <li>Payment integration for courses</li>
                 </ul>
             </div>
-            <div class="mb-6">
-                <h4 class="font-bold text-gray-900 mb-3">Technologies Used:</h4>
+            <div class="mb-4 sm:mb-6">
+                <h4 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Technologies Used:</h4>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">WordPress</span>
-                    <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full">LMS</span>
-                    <span class="px-4 py-2 bg-teal-100 text-teal-800 rounded-full">Progress Tracking</span>
-                    <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full">Quiz System</span>
-                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full">Certificates</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm">WordPress</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm">LMS</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-teal-100 text-teal-800 rounded-full text-xs sm:text-sm">Progress Tracking</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-purple-100 text-purple-800 rounded-full text-xs sm:text-sm">Quiz System</span>
+                    <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow-100 text-yellow-800 rounded-full text-xs sm:text-sm">Certificates</span>
                 </div>
             </div>
             <div class="text-center">
-                <button class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300">
+                <button class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
                     View Live Site 🚀
                 </button>
             </div>
         </div>
     </div>
 
-   
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'977e534eb0ecd8c3',t:'MTc1NjY2MjE1Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
