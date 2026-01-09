@@ -1,4 +1,4 @@
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
         
         * {
             font-family: 'Poppins', sans-serif;
@@ -203,51 +203,285 @@
         .glow-effect:hover {
             box-shadow: 0 0 30px rgba(102, 126, 234, 0.6);
         }
+        
         /* Transitions for smooth color changes */
-.card-email .w-16,
-.card-call .w-16,
-.card-whatsapp .w-16 {
-  transition: background 0.3s ease, transform 0.2s ease;
-}
+        .card-email .w-16,
+        .card-call .w-16,
+        .card-whatsapp .w-16 {
+          transition: background 0.3s ease, transform 0.2s ease;
+        }
 
-.card-email h4, .card-email p,
-.card-call h4, .card-call p,
-.card-whatsapp h4, .card-whatsapp p {
-  transition: color 0.3s ease;
-}
+        .card-email h4, .card-email p,
+        .card-call h4, .card-call p,
+        .card-whatsapp h4, .card-whatsapp p {
+          transition: color 0.3s ease;
+        }
 
-/* Email → Red */
-.card-email:hover .w-16 {
-  background: linear-gradient(to bottom right, #ef4444, #b91c1c) !important;
-}
-.card-email:hover h4,
-.card-email:hover p {
-  color: #b91c1c !important;
-}
-.card-email:hover {
-  box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
-}
+        /* Email → Red */
+        .card-email:hover .w-16 {
+          background: linear-gradient(to bottom right, #ef4444, #b91c1c) !important;
+        }
+        .card-email:hover h4,
+        .card-email:hover p {
+          color: #b91c1c !important;
+        }
+        .card-email:hover {
+          box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+        }
 
-/* Call/Dialer → Blue */
-.card-call:hover .w-16 {
-  background: linear-gradient(to bottom right, #3b82f6, #1d4ed8) !important;
-}
-.card-call:hover h4,
-.card-call:hover p {
-  color: #1d4ed8 !important;
-}
-.card-call:hover {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
-}
+        /* Call/Dialer → Blue */
+        .card-call:hover .w-16 {
+          background: linear-gradient(to bottom right, #3b82f6, #1d4ed8) !important;
+        }
+        .card-call:hover h4,
+        .card-call:hover p {
+          color: #1d4ed8 !important;
+        }
+        .card-call:hover {
+          box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+        }
 
-/* WhatsApp → Green */
-.card-whatsapp:hover .w-16 {
-  background: linear-gradient(to bottom right, #25D366, #128C7E) !important;
-}
-.card-whatsapp:hover h4,
-.card-whatsapp:hover p {
-  color: #128C7E !important;
-}
-.card-whatsapp:hover {
-  box-shadow: 0 0 30px rgba(37, 211, 102, 0.5);
-}
+        /* WhatsApp → Green */
+        .card-whatsapp:hover .w-16 {
+          background: linear-gradient(to bottom right, #25D366, #128C7E) !important;
+        }
+        .card-whatsapp:hover h4,
+        .card-whatsapp:hover p {
+          color: #128C7E !important;
+        }
+        .card-whatsapp:hover {
+          box-shadow: 0 0 30px rgba(37, 211, 102, 0.5);
+        }
+
+        /* ===================================
+           RESPONSIVE MEDIA QUERIES
+           =================================== */
+
+        /* Large Tablets and Small Desktops (max-width: 1024px) */
+        @media screen and (max-width: 1024px) {
+            .modal-content {
+                max-width: 600px;
+                padding: 1.5rem;
+            }
+            
+            .service-card:hover {
+                transform: translateY(-8px) scale(1.01);
+            }
+            
+            .project-card:hover {
+                transform: scale(1.03) rotateY(3deg);
+            }
+        }
+
+        /* Tablets (max-width: 768px) */
+        @media screen and (max-width: 768px) {
+            .modal-content {
+                max-width: 90%;
+                padding: 1.5rem;
+                max-height: 85vh;
+            }
+            
+            .typing-animation {
+                white-space: normal;
+                border-right: none;
+                animation: none;
+            }
+            
+            .floating {
+                animation: floating 8s ease-in-out infinite;
+            }
+            
+            @keyframes floating {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-10px); }
+            }
+            
+            .service-card:hover {
+                transform: translateY(-5px) scale(1.01);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+            }
+            
+            .project-card:hover {
+                transform: scale(1.02);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            }
+            
+            .slide-in-left,
+            .slide-in-right {
+                transform: translateX(-50px);
+            }
+            
+            .slide-in-up {
+                transform: translateY(30px);
+            }
+        }
+
+        /* Mobile Devices (max-width: 640px) */
+        @media screen and (max-width: 640px) {
+            .modal-content {
+                padding: 1.25rem;
+                border-radius: 15px;
+                max-height: 90vh;
+            }
+            
+            .gradient-bg {
+                background-size: 600% 600%;
+            }
+            
+            /* Disable complex hover effects on mobile */
+            .service-card:hover,
+            .service-card:active {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+            
+            .project-card:hover,
+            .project-card:active {
+                transform: scale(1.01);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+            }
+            
+            .tech-icon:hover,
+            .tech-icon:active {
+                transform: scale(1.1) rotate(5deg);
+            }
+            
+            .glow-effect:hover,
+            .glow-effect:active {
+                box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
+            }
+            
+            /* Simplify animations for performance */
+            .slide-in-left,
+            .slide-in-right,
+            .slide-in-up {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: all 0.5s ease;
+            }
+            
+            .pulse-button {
+                animation: pulse 3s infinite;
+            }
+        }
+
+        /* Small Mobile Devices (max-width: 480px) */
+        @media screen and (max-width: 480px) {
+            .modal-content {
+                padding: 1rem;
+                border-radius: 12px;
+                width: 95%;
+            }
+            
+            /* Further reduce animations for very small screens */
+            .floating {
+                animation: none;
+            }
+            
+            .service-card::before {
+                display: none;
+            }
+            
+            /* Simplify card hover effects */
+            .service-card:hover,
+            .service-card:active {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+            }
+            
+            .project-card:hover,
+            .project-card:active {
+                transform: none;
+                box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            }
+            
+            .card-email:hover,
+            .card-email:active {
+                box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+            }
+            
+            .card-call:hover,
+            .card-call:active {
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+            }
+            
+            .card-whatsapp:hover,
+            .card-whatsapp:active {
+                box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        /* Extra Small Devices (max-width: 360px) */
+        @media screen and (max-width: 360px) {
+            .modal-content {
+                padding: 0.875rem;
+                border-radius: 10px;
+            }
+            
+            /* Minimal effects for very small screens */
+            .pulse-button {
+                animation: none;
+            }
+            
+            .tech-icon:hover,
+            .tech-icon:active {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            /* Disable hover-only effects on touch devices */
+            .service-card:hover::before,
+            .service-card:active::before {
+                left: 0;
+            }
+            
+            /* Make interactive elements more touch-friendly */
+            .service-card,
+            .project-card,
+            .tech-icon {
+                touch-action: manipulation;
+            }
+            
+            /* Show overlay on tap instead of hover */
+            .project-card:active .project-overlay {
+                opacity: 1;
+            }
+        }
+
+        /* High DPI screens */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .gradient-bg {
+                background-size: 300% 300%;
+            }
+        }
+
+        /* Landscape orientation adjustments */
+        @media screen and (max-height: 600px) and (orientation: landscape) {
+            .modal-content {
+                max-height: 95vh;
+                padding: 1rem;
+            }
+            
+            .floating {
+                animation: none;
+            }
+        }
+
+        /* Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            .floating,
+            .pulse-button,
+            .gradient-bg {
+                animation: none !important;
+            }
+        }
