@@ -1,324 +1,253 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-/* =========================
-   GLOBAL RESET & BASE
-========================= */
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .slide-in-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .visible {
+            opacity: 1;
+            transform: translate(0);
+        }
+        
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .service-card:hover::before {
+            left: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .project-card {
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.05) rotateY(5deg);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+            opacity: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        
+        .typing-animation {
+            border-right: 2px solid #fff;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #fff; }
+        }
+        
+        .skill-bar {
+            width: 0%;
+            transition: width 2s ease-in-out;
+        }
+        
+        .skill-bar.animate {
+            width: var(--skill-width);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: modalFadeIn 0.3s ease;
+        }
+        
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            transform: scale(0.7);
+            animation: modalSlideIn 0.3s ease forwards;
+        }
+        
+        @keyframes modalSlideIn {
+            to {
+                transform: scale(1);
+            }
+        }
+        
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .tech-icon:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+        
+        .parallax {
+            transform: translateY(0);
+            transition: transform 0.1s ease-out;
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .glow-effect:hover {
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.6);
+        }
+        /* Transitions for smooth color changes */
+.card-email .w-16,
+.card-call .w-16,
+.card-whatsapp .w-16 {
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-html {
-    scroll-behavior: smooth;
+.card-email h4, .card-email p,
+.card-call h4, .card-call p,
+.card-whatsapp h4, .card-whatsapp p {
+  transition: color 0.3s ease;
 }
 
-body {
-    overflow-x: hidden;
+/* Email → Red */
+.card-email:hover .w-16 {
+  background: linear-gradient(to bottom right, #ef4444, #b91c1c) !important;
+}
+.card-email:hover h4,
+.card-email:hover p {
+  color: #b91c1c !important;
+}
+.card-email:hover {
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
 }
 
-/* Safe area support (Notched devices) */
-@supports (padding: max(0px)) {
-    body {
-        padding-left: max(0px, env(safe-area-inset-left));
-        padding-right: max(0px, env(safe-area-inset-right));
-    }
+/* Call/Dialer → Blue */
+.card-call:hover .w-16 {
+  background: linear-gradient(to bottom right, #3b82f6, #1d4ed8) !important;
+}
+.card-call:hover h4,
+.card-call:hover p {
+  color: #1d4ed8 !important;
+}
+.card-call:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
 }
 
-/* =========================
-   FLUID TYPOGRAPHY
-========================= */
-h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    line-height: 1.2;
+/* WhatsApp → Green */
+.card-whatsapp:hover .w-16 {
+  background: linear-gradient(to bottom right, #25D366, #128C7E) !important;
 }
-
-h2 {
-    font-size: clamp(1.75rem, 4vw, 2.75rem);
-    line-height: 1.3;
+.card-whatsapp:hover h4,
+.card-whatsapp:hover p {
+  color: #128C7E !important;
 }
-
-h3 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-p {
-    font-size: clamp(0.95rem, 2.2vw, 1.1rem);
-    line-height: 1.6;
-}
-
-/* =========================
-   CONTAINER & GRID
-========================= */
-.container {
-    width: 100%;
-    max-width: 1280px;
-    margin-inline: auto;
-    padding-inline: clamp(1rem, 4vw, 2.5rem);
-}
-
-.responsive-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
-}
-
-/* =========================
-   BACKGROUND & ANIMATIONS
-========================= */
-.gradient-bg {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-    background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.floating {
-    animation: floating 6s ease-in-out infinite;
-}
-
-@keyframes floating {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-/* Disable heavy animations on mobile */
-@media (max-width: 640px) {
-    .floating,
-    .parallax {
-        animation: none;
-        transform: none;
-    }
-}
-
-/* =========================
-   SLIDE IN ANIMATIONS
-========================= */
-.slide-in-left,
-.slide-in-right,
-.slide-in-up {
-    opacity: 0;
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.slide-in-left { transform: translateX(-80px); }
-.slide-in-right { transform: translateX(80px); }
-.slide-in-up { transform: translateY(40px); }
-
-.visible {
-    opacity: 1;
-    transform: translate(0);
-}
-
-/* =========================
-   SERVICE & PROJECT CARDS
-========================= */
-.service-card,
-.project-card {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
-}
-
-/* Shine Effect */
-.service-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    left: -100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-    transition: left 0.5s;
-}
-
-.service-card:hover::before {
-    left: 100%;
-}
-
-.service-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-/* Reduce hover effects on touch devices */
-@media (hover: none) {
-    .service-card:hover,
-    .project-card:hover {
-        transform: none;
-        box-shadow: none;
-    }
-}
-
-/* =========================
-   PROJECT OVERLAY
-========================= */
-.project-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, rgba(102,126,234,.9), rgba(118,75,162,.9));
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
-
-/* =========================
-   TYPING EFFECT
-========================= */
-.typing-animation {
-    display: inline-block;
-    border-right: 2px solid #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@media (max-width: 640px) {
-    .typing-animation {
-        white-space: normal;
-        border-right: none;
-        animation: blink-caret 0.75s step-end infinite;
-    }
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    50% { border-color: #fff; }
-}
-
-/* =========================
-   SKILL BAR
-========================= */
-.skill-bar {
-    width: 0%;
-    transition: width 2s ease-in-out;
-}
-
-.skill-bar.animate {
-    width: var(--skill-width);
-}
-
-/* =========================
-   MODAL
-========================= */
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.9);
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    padding: 1rem;
-    overflow-y: auto;
-}
-
-.modal.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-content {
-    background: #fff;
-    width: 100%;
-    max-width: 700px;
-    max-height: 95vh;
-    padding: clamp(1.25rem, 3vw, 2rem);
-    border-radius: 20px;
-    overflow-y: auto;
-    animation: modalIn 0.3s ease forwards;
-}
-
-@keyframes modalIn {
-    from { transform: scale(0.85); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-/* =========================
-   BUTTONS & ICONS
-========================= */
-button,
-a {
-    min-height: 44px;
-    min-width: 44px;
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pulse-button {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    50% { transform: scale(1.05); }
-}
-
-.tech-icon {
-    transition: transform 0.3s ease;
-}
-
-.tech-icon:hover {
-    transform: scale(1.2) rotate(10deg);
-}
-
-/* =========================
-   IMAGES
-========================= */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* =========================
-   HERO FIX (Mobile Safari)
-========================= */
-.hero-section {
-    min-height: 100svh;
-}
-
-/* =========================
-   ACCESSIBILITY
-========================= */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-a:focus,
-button:focus {
-    outline: 2px solid #667eea;
-    outline-offset: 2px;
-}
-
-/* =========================
-   PRINT
-========================= */
-@media print {
-    nav, footer, button, .modal {
-        display: none;
-    }
+.card-whatsapp:hover {
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.5);
 }
