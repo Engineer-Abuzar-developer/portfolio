@@ -152,24 +152,41 @@ p {
     transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
-/* Email card hover */
-.card-email:hover .bg-gradient-to-br {
-    background: linear-gradient(135deg, #4f46e5, #7c3aed);
-    transition: all 0.3s ease;
+.icon-box-email {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.card-email:hover .icon-box-email {
+    background: linear-gradient(135deg, #4338ca, #6d28d9);
+    transform: scale(1.1) rotate(5deg);
 }
 
-/* Call card hover */
-.card-call:hover .bg-gradient-to-br {
-    background: linear-gradient(135deg, #059669, #0d9488);
-    transition: all 0.3s ease;
+.icon-box-call {
+    background: linear-gradient(135deg, #10b981, #14b8a6);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.card-call:hover .icon-box-call {
+    background: linear-gradient(135deg, #059669, #0f766e);
+    transform: scale(1.1) rotate(5deg);
 }
 
-/* WhatsApp card hover */
-.card-whatsapp:hover .bg-gradient-to-br {
-    background: linear-gradient(135deg, #2563eb, #0891b2);
-    transition: all 0.3s ease;
+.icon-box-whatsapp {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.card-whatsapp:hover .icon-box-whatsapp {
+    background: linear-gradient(135deg, #1d4ed8, #0e7490);
+    transform: scale(1.1) rotate(5deg);
 }
 
+/* Smooth card lift on hover */
+.card-email, .card-call, .card-whatsapp {
+    transition: all 0.3s ease;
+}
+.card-email:hover, .card-call:hover, .card-whatsapp:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
 /* Reduce hover effects on touch devices */
 @media (hover: none) {
     .service-card:hover,
