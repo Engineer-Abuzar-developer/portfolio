@@ -152,6 +152,23 @@ p {
     transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
+/* Email card hover */
+.card-email:hover .bg-gradient-to-br {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    transition: all 0.3s ease;
+}
+
+/* Call card hover */
+.card-call:hover .bg-gradient-to-br {
+    background: linear-gradient(135deg, #059669, #0d9488);
+    transition: all 0.3s ease;
+}
+
+/* WhatsApp card hover */
+.card-whatsapp:hover .bg-gradient-to-br {
+    background: linear-gradient(135deg, #2563eb, #0891b2);
+    transition: all 0.3s ease;
+}
 
 /* Reduce hover effects on touch devices */
 @media (hover: none) {
