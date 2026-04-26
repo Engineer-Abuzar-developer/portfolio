@@ -217,7 +217,7 @@ PORTFOLIO HIGHLIGHTS
 document.querySelectorAll('.service-card, .project-card').forEach(card => {
 
 // After:
-document.querySelectorAll('.service-card, .project-card, .contact-card').forEach(card => {
+document.querySelectorAll('.service-card, .project-card, .card-email, .card-call, .card-whatsapp').forEach(card => {
     card.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-10px) scale(1.02)';
     });
