@@ -213,13 +213,16 @@ PORTFOLIO HIGHLIGHTS
         });
 
         // Add some interactive hover effects
-        document.querySelectorAll('.service-card, .project-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = this.classList.contains('service-card') ? 
-                    'translateY(-10px) scale(1.02)' : 'scale(1.05) rotateY(5deg)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1) rotateY(0)';
-            });
+       // Before:
+document.querySelectorAll('.service-card, .project-card').forEach(card => {
+
+// After:
+document.querySelectorAll('.service-card, .project-card, .contact-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+    });
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
         });
